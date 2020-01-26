@@ -1,6 +1,6 @@
 {
-  "short_name": "Your Orders",
-  "name": "Your Orders",
+  "short_name": "Fred",
+  "name": "Fred - Your Purchasing Assistant",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,8 +8,8 @@
       "type": "image/x-icon"
     }
   ],
-  "start_url": ".",
+  "start_url": "https://clydedz.github.io/fred/",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#2196f3",
   "background_color": "#ffffff"
 }
