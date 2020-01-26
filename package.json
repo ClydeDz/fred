@@ -1,6 +1,6 @@
 {
-  "name": "create-react-app",
-  "version": "4.0.0",
+  "name": "fred",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
