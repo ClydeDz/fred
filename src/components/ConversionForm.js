@@ -35,7 +35,7 @@ export default function SignIn() {
   React.useEffect(() => {  
     let result = calculation.Calculate(values.conversionType, values.quantity, values.cost);
     setPerUnitValueValue(result);
-  });
+  }, [values, calculation]);
 
   const handleConversionTypeChange = prop => event => {
     console.log("handleConversionTypeChange", event.target.value);  
