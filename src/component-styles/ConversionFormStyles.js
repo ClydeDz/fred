@@ -20,7 +20,11 @@ const ConversionFormStyles = makeStyles(theme => ({
     },
     h2: {
         color: theme.palette.primary.main,
-    }
+    },
+    formControl: {
+        margin: theme.spacing(0, 0, 1, 0),
+        minWidth: 120,
+    },
 }));
 
 export default ConversionFormStyles;

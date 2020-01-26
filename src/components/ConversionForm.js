@@ -75,11 +75,11 @@ export default function SignIn() {
             <Select 
               id="demo-simple-select-outlined"
               name="conversionType" 
-              tabIndex={0}
+              tabIndex={0} 
               autoFocus={true}
               value={values.conversionType}
               onChange={handleConversionTypeChange('conversionType')}
-              labelWidth={100}
+              labelWidth={82}
               > 
                 <MenuItem value={1}>Calculate cost / 100 g</MenuItem>
                 <MenuItem value={2}>Calculate cost / 100 ml</MenuItem>
@@ -89,7 +89,6 @@ export default function SignIn() {
           <TextField
             variant="outlined"
             margin="normal"
-            required
             fullWidth
             id="quantity"
             label="Quantity"
@@ -107,7 +106,6 @@ export default function SignIn() {
           <TextField
             variant="outlined"
             margin="normal"
-            required
             fullWidth
             id="cost"
             label="Price"
