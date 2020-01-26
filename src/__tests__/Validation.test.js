@@ -11,6 +11,7 @@ it('Invalid inputs', () => {
     expect(calculation.IsValid(0)).toBe(false);
     expect(calculation.IsValid(-5)).toBe(false);
     expect(calculation.IsValid("")).toBe(false);
+    expect(calculation.IsValid("0")).toBe(false);
     expect(calculation.IsValid(" ")).toBe(false);
     expect(calculation.IsValid("abc")).toBe(false);
     expect(calculation.IsValid("y")).toBe(false);

@@ -1,6 +1,6 @@
 export class Calculation {
     IsValid(input) {
-        return /^\d+(\.\d+)*$/.test(input) && input !== "" && input !== 0;
+        return /^\d+(\.\d+)*$/.test(input) && input !== "" && input !== 0 && input !== "0";
     }
 
     Calculate(conversionType, quantity, cost) { 

@@ -100,7 +100,7 @@ export default function SignIn() {
             type="text" pattern="[0-9]+"
             autoFocus={false} 
             error = { !calculation.IsValid(values.quantity) }
-            helperText={ calculation.IsValid(values.quantity) ? "": "Must not be 0" }
+            helperText={ calculation.IsValid(values.quantity) ? "": "Input is invalid" }
             value={values.quantity}
             onChange={handleChange('quantity')}
           />
@@ -116,7 +116,7 @@ export default function SignIn() {
             autoFocus={false}
             value={values.cost}
             error={ !calculation.IsValid(values.cost) }
-            helperText={ calculation.IsValid(values.cost) ? "" : "Incorrect entry"}
+            helperText={ calculation.IsValid(values.cost) ? "" : "Input is invalid"}
             onChange={handleChange('cost')}
           />
           <h2 align="center" className={classes.h2}>

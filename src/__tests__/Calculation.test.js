@@ -19,6 +19,7 @@ it('Exceptional inputs', () => {
     expect(calculation.Calculate(2, 0, 3.5)).toEqual(0);
     expect(calculation.Calculate(3, "", "")).toEqual(0);
     expect(calculation.Calculate(3, "0", "")).toEqual(0);
+    expect(calculation.Calculate(3, "0", 4)).toEqual(0);
     expect(calculation.Calculate("", "0", "")).toEqual(0);
     expect(calculation.Calculate(1, null, "")).toEqual(0);
     expect(calculation.Calculate(1, null, null)).toEqual(0);
