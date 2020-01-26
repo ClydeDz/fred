@@ -33,3 +33,4 @@ jobs:
       env:
         EMAIL: ${{ secrets.EMAIL }} 
         GH_TOKEN: ${{ secrets.PAT }}  
+        BUILD_DIR: public/
