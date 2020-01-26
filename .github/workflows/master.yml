@@ -24,7 +24,7 @@ jobs:
       run: |
         npm install
         npm ci
-        npm run build --if-present
+        npm run build
         npm test
       env:
         CI: false
@@ -33,4 +33,4 @@ jobs:
       env:
         EMAIL: ${{ secrets.EMAIL }} 
         GH_TOKEN: ${{ secrets.PAT }}  
-        BUILD_DIR: public/
+        BUILD_DIR: build/
