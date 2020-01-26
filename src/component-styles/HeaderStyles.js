@@ -12,11 +12,13 @@ const HeaderStyles = makeStyles(theme => ({
       height: theme.spacing(3),
     },
     large: {
-      width: theme.spacing(7),
-      height: theme.spacing(7),
+      width: theme.spacing(12),
+      height: theme.spacing(12),
+      marginBottom: theme.spacing(1),
     },
     h1: {
       color: theme.palette.primary.main,
+      marginBottom: theme.spacing(0),
     }
   }));
 
