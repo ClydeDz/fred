@@ -41,18 +41,3 @@ jobs:
         EMAIL: ${{ secrets.EMAIL }} 
         GH_TOKEN: ${{ secrets.PAT }}  
         BUILD_DIR: build/
-  release:
-    runs-on: ubuntu-latest
-    needs: [build]
-    steps: 
-    - uses: actions/checkout@master
-    - name: Create release
-      uses: Roang-zero1/github-create-release-action@master
-      env:
-        GITHUB_TOKEN: ${{ secrets.PAT }}
-    - name: Create GitHub release
-      uses: Roang-zero1/github-upload-release-artifacts-action@master
-      with:
-        args: build/
-      env:
-        GITHUB_TOKEN: ${{ secrets.PAT }}
