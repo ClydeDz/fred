@@ -1,11 +1,32 @@
 {
   "short_name": "Fred",
   "name": "Fred - Your Purchasing Assistant",
+  "description":"Fred is a purchasing assistant that you can carry along with you to the supermarket. He ensures that you buy the right product by converting the list price into a comparable base price.",
   "icons": [
     {
       "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "sizes": "64x64 24x24",
       "type": "image/x-icon"
+    },
+    {
+      "src": "favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon-32x32.ico",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src":"https://clydedz.github.io/fred/images/android-chrome-192x192.png",
+      "sizes":"192x192",
+      "type":"image/png"
+    },
+    {
+      "src":"https://clydedz.github.io/fred/images/android-chrome-512x512.png",
+      "sizes":"512x512",
+      "type":"image/png"
     }
   ],
   "start_url": "https://clydedz.github.io/fred/",
