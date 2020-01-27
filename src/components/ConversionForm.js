@@ -15,7 +15,7 @@ export default function SignIn() {
   const calculation = new Calculation(); 
 
   const [perUnitValue, setPerUnitValueValue] = React.useState('0')
-  const [quantityAdornment, setValue] = React.useState({
+  const [quantityAdornment, setQuantityAdornment] = React.useState({
     quantityUnit: 'g', quantityUnitDisplay: '/ 100g'
   })
   const [model, setModelValues] = React.useState({
@@ -38,22 +38,22 @@ export default function SignIn() {
     setModelValues({ ...model, [prop]: event.target.value });  
     switch(event.target.value){
       case 1:
-        setValue({
+        setQuantityAdornment({
           quantityUnit: 'g', quantityUnitDisplay: '/ 100g'
         });   
         break;
       case 2:
-        setValue({
+        setQuantityAdornment({
           quantityUnit: 'ml', quantityUnitDisplay: '/ 100ml'
         });    
         break;
       case 3:
-        setValue({
+        setQuantityAdornment({
           quantityUnit: 'L', quantityUnitDisplay: '/ 1L'
         });   
         break;
       default:
-        setValue({
+        setQuantityAdornment({
           quantityUnit: 'g', quantityUnitDisplay: '/ 100g'
         });   
     } 
