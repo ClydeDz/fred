@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "66d630cd775edf99cc1c19697f36cf30",
+    "revision": "b23bc1fe44b516064d8f29d3818323fd",
     "url": "https://clydedz.github.io/fred/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://clydedz.github.io/fred/static/js/2.5316dda6.chunk.js.LICENSE"
   },
   {
-    "revision": "366d251bc7672dc9b401",
-    "url": "https://clydedz.github.io/fred/static/js/main.016dd03b.chunk.js"
+    "revision": "26fdc030971126ba6cec",
+    "url": "https://clydedz.github.io/fred/static/js/main.4fc35fb4.chunk.js"
   },
   {
     "revision": "13d90c4ee101ba25dda7",
