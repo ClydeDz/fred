@@ -18,26 +18,24 @@ export default function SignIn() {
   const [quantityAdornment, setValue] = React.useState({
     quantityUnit: 'g', quantityUnitDisplay: '/ 100g'
   })
-  const [values, setValues] = React.useState({
+  const [model, setModelValues] = React.useState({
     cost: '2',
     quantity: '100',
-    quantityUnit: 'g',
-    quantityUnitDisplay: '/ 100g',
     conversionType: 1,
     currency: '$'
   }); 
 
   const handleChange = prop => event => { 
-    setValues({ ...values, [prop]: event.target.value });    
+    setModelValues({ ...model, [prop]: event.target.value });    
   };
 
   React.useEffect(() => {  
-    let result = calculation.Calculate(values.conversionType, values.quantity, values.cost);
+    let result = calculation.Calculate(model.conversionType, model.quantity, model.cost);
     setPerUnitValueValue(result);
-  }, [values, calculation]);
+  }, [model, calculation]);
 
   const handleConversionTypeChange = prop => event => { 
-    setValues({ ...values, [prop]: event.target.value });  
+    setModelValues({ ...model, [prop]: event.target.value });  
     switch(event.target.value){
       case 1:
         setValue({
@@ -75,7 +73,7 @@ export default function SignIn() {
               name="conversionType" 
               tabIndex={0} 
               autoFocus={true}
-              value={values.conversionType}
+              value={model.conversionType}
               onChange={handleConversionTypeChange('conversionType')}
               labelWidth={82}
               > 
@@ -96,9 +94,9 @@ export default function SignIn() {
             name="quantity"
             type="text" pattern="[0-9]+"
             autoFocus={false} 
-            error = { !calculation.IsValid(values.quantity) }
-            helperText={ calculation.IsValid(values.quantity) ? "": "Input is invalid" }
-            value={values.quantity}
+            error = { !calculation.IsValid(model.quantity) }
+            helperText={ calculation.IsValid(model.quantity) ? "": "Input is invalid" }
+            value={model.quantity}
             onChange={handleChange('quantity')}
           />
           <TextField
@@ -110,13 +108,13 @@ export default function SignIn() {
             name="cost" 
             type="text" pattern="[0-9]+"
             autoFocus={false}
-            value={values.cost}
-            error={ !calculation.IsValid(values.cost) }
-            helperText={ calculation.IsValid(values.cost) ? "" : "Input is invalid"}
+            value={model.cost}
+            error={ !calculation.IsValid(model.cost) }
+            helperText={ calculation.IsValid(model.cost) ? "" : "Input is invalid"}
             onChange={handleChange('cost')}
           />
           <h2 align="center" className={classes.h2}>
-            {values.currency + "" + perUnitValue + " " + quantityAdornment.quantityUnitDisplay}
+            {model.currency + "" + perUnitValue + " " + quantityAdornment.quantityUnitDisplay}
           </h2>
         </form>
       </div> 
