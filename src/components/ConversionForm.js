@@ -9,6 +9,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import ConversionFormStyles from '../component-styles/ConversionFormStyles';
+import ConversionTypes from '../utils/ConversionTypes';
 
 export default function SignIn() {
   const classes = ConversionFormStyles();
@@ -21,7 +22,7 @@ export default function SignIn() {
   const [model, setModelValues] = React.useState({
     cost: '2',
     quantity: '100',
-    conversionType: 1,
+    conversionType: ConversionTypes.CostPer100g,
     currency: '$'
   }); 
 
@@ -77,9 +78,9 @@ export default function SignIn() {
               onChange={handleConversionTypeChange('conversionType')}
               labelWidth={82}
               > 
-                <MenuItem value={1}>Calculate cost / 100 g</MenuItem>
-                <MenuItem value={2}>Calculate cost / 100 ml</MenuItem>
-                <MenuItem value={3}>Calculate cost / 1 L</MenuItem>
+                <MenuItem value={ConversionTypes.CostPer100g}>Calculate cost / 100 g</MenuItem>
+                <MenuItem value={ConversionTypes.CostPer100ml}>Calculate cost / 100 ml</MenuItem>
+                <MenuItem value={ConversionTypes.CostPer1l}>Calculate cost / 1 L</MenuItem>
             </Select>
           </FormControl>
           <TextField
