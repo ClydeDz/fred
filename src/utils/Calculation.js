@@ -10,11 +10,10 @@ export class Calculation {
         if(!inputIsValid)
             return 0;
     
-        if(conversionType === ConversionTypes.CostPer100g || conversionType === ConversionTypes.CostPer100ml){
-            return parseFloat(((100/quantity)*cost).toFixed(2));
-        }
-        else{
+        if(conversionType === ConversionTypes.CostPer1l){ 
             return parseFloat(((100/(quantity*100))*cost).toFixed(2));
         }
+         
+        return parseFloat(((100/quantity)*cost).toFixed(2));
     }
 }  

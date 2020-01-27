@@ -7,11 +7,11 @@ it('Simple grams', () => {
 
 it('Simple milliliters', () => {
     expect(calculation.Calculate(2, 300, 2)).toEqual(0.67);
+    expect(calculation.Calculate("", 3, 5.27)).toEqual(175.67);
 });
 
 it('Simple litres', () => {
-    expect(calculation.Calculate(3, 3, 5.27)).toEqual(1.76);
-    expect(calculation.Calculate("", 3, 5.27)).toEqual(1.76);
+    expect(calculation.Calculate(3, 3, 5.27)).toEqual(1.76); 
 });
 
 it('Exceptional inputs', () => {
