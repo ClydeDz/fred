@@ -27,8 +27,7 @@ export default function SignIn() {
     currency: '$'
   }); 
 
-  const handleChange = prop => event => {
-    console.log("handleChange", event.target.value);  
+  const handleChange = prop => event => { 
     setValues({ ...values, [prop]: event.target.value });    
   };
 
@@ -37,8 +36,7 @@ export default function SignIn() {
     setPerUnitValueValue(result);
   }, [values, calculation]);
 
-  const handleConversionTypeChange = prop => event => {
-    console.log("handleConversionTypeChange", event.target.value);  
+  const handleConversionTypeChange = prop => event => { 
     setValues({ ...values, [prop]: event.target.value });  
     switch(event.target.value){
       case 1:
