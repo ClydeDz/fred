@@ -5,7 +5,7 @@ import HeaderStyles from '../component-styles/HeaderStyles';
 
 export default function Header() {
   const classes = HeaderStyles();
-  const avatarImage = process.env.PUBLIC_URL + "images/fred.png"
+  const avatarImage = process.env.PUBLIC_URL + "/images/fred.png"
 
     return (
       <div align="center">
