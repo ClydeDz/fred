@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "https://clydedz.github.io/fred/static/js/main.4595ae2c.chunk.js",
-    "main.js.map": "https://clydedz.github.io/fred/static/js/main.4595ae2c.chunk.js.map",
-    "runtime-main.js": "https://clydedz.github.io/fred/static/js/runtime-main.c39ba0cd.js",
-    "runtime-main.js.map": "https://clydedz.github.io/fred/static/js/runtime-main.c39ba0cd.js.map",
-    "static/js/2.5316dda6.chunk.js": "https://clydedz.github.io/fred/static/js/2.5316dda6.chunk.js",
-    "static/js/2.5316dda6.chunk.js.map": "https://clydedz.github.io/fred/static/js/2.5316dda6.chunk.js.map",
+    "main.js": "https://clydedz.github.io/fred/static/js/main.f35fd0cc.chunk.js",
+    "main.js.map": "https://clydedz.github.io/fred/static/js/main.f35fd0cc.chunk.js.map",
+    "runtime-main.js": "https://clydedz.github.io/fred/static/js/runtime-main.4b808245.js",
+    "runtime-main.js.map": "https://clydedz.github.io/fred/static/js/runtime-main.4b808245.js.map",
+    "static/js/2.dee924a4.chunk.js": "https://clydedz.github.io/fred/static/js/2.dee924a4.chunk.js",
+    "static/js/2.dee924a4.chunk.js.map": "https://clydedz.github.io/fred/static/js/2.dee924a4.chunk.js.map",
     "index.html": "https://clydedz.github.io/fred/index.html",
-    "precache-manifest.a1e2f687127219cf1f1d28bfc1112db0.js": "https://clydedz.github.io/fred/precache-manifest.a1e2f687127219cf1f1d28bfc1112db0.js",
+    "precache-manifest.d6577dd130c98d22d375d750f1a0933b.js": "https://clydedz.github.io/fred/precache-manifest.d6577dd130c98d22d375d750f1a0933b.js",
     "service-worker.js": "https://clydedz.github.io/fred/service-worker.js",
-    "static/js/2.5316dda6.chunk.js.LICENSE": "https://clydedz.github.io/fred/static/js/2.5316dda6.chunk.js.LICENSE"
+    "static/js/2.dee924a4.chunk.js.LICENSE.txt": "https://clydedz.github.io/fred/static/js/2.dee924a4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.c39ba0cd.js",
-    "static/js/2.5316dda6.chunk.js",
-    "static/js/main.4595ae2c.chunk.js"
+    "static/js/runtime-main.4b808245.js",
+    "static/js/2.dee924a4.chunk.js",
+    "static/js/main.f35fd0cc.chunk.js"
   ]
 }
