@@ -4,6 +4,7 @@ import Link from '@material-ui/core/Link';
 
 export default function Copyright() {
     return (
+      <div>
       <Typography variant="body2" color="textSecondary" align="center">
         {'Copyright © '}
         <Link color="inherit" href="https://clydedsouza.net/?ref=fred" target="blank">
@@ -11,5 +12,12 @@ export default function Copyright() {
         </Link>{' '}
         {new Date().getFullYear()}
       </Typography>
+      <Typography variant="body2" color="textSecondary" align="center">
+        {'Fred\'s wonderful '}
+        <Link color="inherit" href="https://www.oxygenna.com/freebies/get-the-coolest-free-material-avatars-from-oxygenna?ref=fred" target="blank">
+          profile picture
+        </Link>
+      </Typography>
+      </div>      
     );
   }
