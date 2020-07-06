@@ -6,11 +6,10 @@ export default function Copyright() {
     return (
       <div>
       <Typography variant="body2" color="textSecondary" align="center">
-        {'Copyright © '}
+        {`Copyright © ${new Date().getFullYear()} `}
         <Link color="inherit" href="https://clydedsouza.net/?ref=fred" target="blank">
           Clyde D'Souza
-        </Link>{' '}
-        {new Date().getFullYear()}
+        </Link> 
       </Typography>
       <Typography variant="body2" color="textSecondary" align="center">
         {'Fred\'s wonderful '}
