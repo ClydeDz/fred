@@ -41,8 +41,9 @@ jobs:
         target: "build/LICENSE" 
 
     - name: Deploy to GitHub Pages
-      uses: Cecilapp/GitHub-Pages-deploy@master
+      uses: Cecilapp/GitHub-Pages-deploy@v3
+      with:
+        build_dir: build/
+        email: ${{ secrets.EMAIL }}
       env:
-        EMAIL: ${{ secrets.EMAIL }} 
-        GH_TOKEN: ${{ secrets.PAT }}  
-        BUILD_DIR: build/
+        GITHUB_TOKEN: ${{ secrets.PAT }}
