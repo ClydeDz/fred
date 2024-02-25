@@ -53,6 +53,11 @@ export default function SignIn() {
           quantityUnit: 'L', quantityUnitDisplay: '/ 1L'
         });   
         break;
+      case 4:
+        setQuantityAdornment({
+          quantityUnit: 'n', quantityUnitDisplay: '/ unit'
+        });   
+        break;
       default:
         setQuantityAdornment({
           quantityUnit: 'g', quantityUnitDisplay: '/ 100g'
@@ -81,6 +86,7 @@ export default function SignIn() {
                 <MenuItem value={ConversionTypes.CostPer100g}>Calculate cost / 100 g</MenuItem>
                 <MenuItem value={ConversionTypes.CostPer100ml}>Calculate cost / 100 ml</MenuItem>
                 <MenuItem value={ConversionTypes.CostPer1l}>Calculate cost / 1 L</MenuItem>
+                <MenuItem value={ConversionTypes.CostPerUnit}>Calculate cost / unit</MenuItem>
             </Select>
           </FormControl>
           <TextField

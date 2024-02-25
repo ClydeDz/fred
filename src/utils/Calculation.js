@@ -13,6 +13,10 @@ export class Calculation {
         if(conversionType === ConversionTypes.CostPer1l){ 
             return parseFloat(((100/(quantity*100))*cost).toFixed(2));
         }
+
+        if(conversionType === ConversionTypes.CostPerUnit){
+            return parseFloat((cost/quantity).toFixed(2));
+        }
          
         return parseFloat(((100/quantity)*cost).toFixed(2));
     }
