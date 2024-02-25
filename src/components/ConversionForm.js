@@ -10,8 +10,10 @@ import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import ConversionFormStyles from '../component-styles/ConversionFormStyles';
 import ConversionTypes from '../utils/ConversionTypes';
+import ConversionExamples from '../utils/ConversionExamples';
+import FormHelperText from '@material-ui/core/FormHelperText';
 
-export default function SignIn() {
+export default function ConversionForm() {
   const classes = ConversionFormStyles();
   const calculation = new Calculation(); 
 
@@ -25,6 +27,7 @@ export default function SignIn() {
     conversionType: ConversionTypes.CostPer100g,
     currency: '$'
   }); 
+  const [example, setExample] = React.useState(ConversionExamples[ConversionTypes.CostPer100g]);
 
   const handleChange = prop => event => { 
     setModelValues({ ...model, [prop]: event.target.value });    
@@ -36,7 +39,8 @@ export default function SignIn() {
   }, [model, calculation]);
 
   const handleConversionTypeChange = prop => event => { 
-    setModelValues({ ...model, [prop]: event.target.value });  
+    setModelValues({ ...model, [prop]: event.target.value });
+    setExample(ConversionExamples[event.target.value])  
     switch(event.target.value){
       case 1:
         setQuantityAdornment({
@@ -88,6 +92,7 @@ export default function SignIn() {
                 <MenuItem value={ConversionTypes.CostPer1l}>Calculate cost / 1 L</MenuItem>
                 <MenuItem value={ConversionTypes.CostPerUnit}>Calculate cost / unit</MenuItem>
             </Select>
+            <FormHelperText>{example}</FormHelperText>
           </FormControl>
           <TextField
             variant="outlined"
