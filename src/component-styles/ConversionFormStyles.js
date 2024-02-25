@@ -20,7 +20,7 @@ const ConversionFormStyles = makeStyles(theme => ({
         margin: theme.spacing(3, 0, 2),
     },
     h2: { 
-        fontSize: theme.typography.h1,
+        fontSize: theme.typography.h2,
         animation: '$color-change 9s infinite',
     }, 
     '@keyframes color-change': {
