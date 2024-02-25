@@ -1,4 +1,4 @@
-name: Master build and deploy
+name: Build and deploy website
 
 on:
   push:
@@ -10,31 +10,36 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [20.x]
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v3
+    
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: npm install, build, and test
-      run: |
-        npm install
-        npm ci
-        npm run build
-        npm test
-      env:
-        CI: false
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Run tests
+      run: npm run test
+
+    - name: Generate website files
+      run: npm run build
+
     - name: Copy file
       uses: canastro/copy-action@0.0.2
       with: 
         source: "README.md" 
         target: "build/README.md"
+
     - name: Copy file
       uses: canastro/copy-action@0.0.2
       with: 
         source: "LICENSE" 
         target: "build/LICENSE" 
+
     - name: Deploy to GitHub Pages
       uses: Cecilapp/GitHub-Pages-deploy@master
       env:
