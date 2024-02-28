@@ -104,7 +104,8 @@ export default function ConversionForm() {
               endAdornment: <InputAdornment position="end">{quantityAdornment.quantityUnit}</InputAdornment>,
             }}
             name="quantity"
-            type="text" pattern="[0-9]+"
+            type="number" 
+            pattern="[0-9]+"
             autoFocus={false} 
             error = { !calculation.IsValid(model.quantity) }
             helperText={ calculation.IsValid(model.quantity) ? "": "Input is invalid" }
@@ -118,7 +119,8 @@ export default function ConversionForm() {
             id="cost"
             label="Price"
             name="cost" 
-            type="text" pattern="[0-9]+"
+            type="number" 
+            pattern="[0-9]+"
             autoFocus={false}
             value={model.cost}
             error={ !calculation.IsValid(model.cost) }
