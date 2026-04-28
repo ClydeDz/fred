@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "https://clydedz.github.io/fred/static/js/main.7b301784.js",
+    "main.js": "https://clydedz.github.io/fred/static/js/main.f0425be5.js",
     "index.html": "https://clydedz.github.io/fred/index.html",
-    "main.7b301784.js.map": "https://clydedz.github.io/fred/static/js/main.7b301784.js.map"
+    "main.f0425be5.js.map": "https://clydedz.github.io/fred/static/js/main.f0425be5.js.map"
   },
   "entrypoints": [
-    "static/js/main.7b301784.js"
+    "static/js/main.f0425be5.js"
   ]
 }
